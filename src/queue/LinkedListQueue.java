@@ -20,13 +20,12 @@ public class LinkedListQueue {
         if(isEmpty()) {
             front = new Node(x);
             rear = front;
-            size++;
         } else {
             Node temp = new Node(x);
             rear.next = temp;
             rear = temp;
-            size++;
         }
+        size++;
     }
 
     public void dequeue() {
@@ -36,6 +35,7 @@ public class LinkedListQueue {
             front = null;
             rear = null;
             size--;
+            return;
         }
         front = front.next;
         size--;
