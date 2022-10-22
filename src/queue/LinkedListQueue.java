@@ -2,7 +2,6 @@ package queue;
 import linked_lists.Node;
 
 public class LinkedListQueue {
-
     int size;
     Node front, rear;
 
